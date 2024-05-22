@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Color Picker</title>
+    </head>
+    <body>
+        <div class="app">
+            <header class="heading">
+                <h1>colorPicker</h1>
+            </header>
+            <main>
+                <form action="submit">
+                    <input
+                        type="color"
+                        name="color-selection"
+                        id="color-selection"
+                        class="color-selection"
+                        value="#ff00ff"
+                    />
+                    <select
+                        name="color-type"
+                        id="color-type"
+                        class="color-type"
+                    >
+                        <!-- monochrome monochrome-dark monochrome-light analogic complement analogic-complement triad quad -->
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">monochrome-dark</option>
+                        <option value="monochrome-light">
+                            monochrome-light
+                        </option>
+                        <option value="analogic">analogic</option>
+                        <option value="complement">complement</option>
+                        <option value="analogic-complement">
+                            analogic-complement
+                        </option>
+                        <option value="triad">triad</option>
+                        <option value="quad">quad</option>
+                    </select>
+                    <button class="get-color-btn" id="get-color-btn">
+                        Get color scheme
+                    </button>
+                </form>
+            </main>
+            <section class="color-labels">
+                <p>#fffff</p>
+                <p>#fffff</p>
+                <p>#fffff</p>
+                <p>#fffff</p>
+                <p>#fffff</p>
+            </section>
+            <section class="colors">
+                <div class="color">
+                    <!-- <p>coloa</p> -->
+                </div>
+                <div class="color">
+                    <!-- <p>Color</p>w -->
+                </div>
+                <div class="color">
+                    <!-- <p>Color</p> -->
+                </div>
+                <div class="color">
+                    <!-- <p>Color</p> -->
+                </div>
+                <div class="color">
+                    <!-- <p>Color</p> -->
+                </div>
+            </section>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
