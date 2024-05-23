@@ -17,36 +17,81 @@ body,
     height: 100%;
 }
 
-.color-labels {
-    display: flex;
-    justify-content: space-between;
+header h1 {
+    text-align: center;
+    padding: 0;
+    margin: .4em;
 }
 
-.colors {
-    margin-top: 1em;
-    flex: 1;
+form {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1em;
+    gap: .5em;
+    margin: 0 .5em 1em;
+    flex-direction: column;
 }
 
+form input,
+form select,
+form button {
+    border-radius: 5px;
+    border: 2px solid #fff;
+    text-align: center;
+    /* height: 2em; */
+    width: 100%;
+}
+
+form input {
+    padding: 0;
+}
+
+form button,
+form select {
+    padding: .5em;
+    
+}
+
+.colors-grid {
+    flex-grow: 1;
+    display: grid;
+    grid-template-areas: 
+        "lab lab lab lab lab"
+        "col col col col col";
+    grid-template-rows: 1fr auto; /* First row auto-sized to content, second row takes remaining space */
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+}
+.color-label {
+    grid-area: "lab";
+    text-align: center;
+    font-size: .8rem;
+}
 .color {
-    /* flex: 1; */
+    grid-area: "col";
     height: 100%;
-    width: 20%;
-    display: flex;
-    /* align-content: center; */
+    width: 100%;
     justify-content: center;
-
     background-color: red;
 }
 
-.color p {
-    background-color: red;
-    margin-top: auto;
-    margin-bottom: auto;
+#color-1 {
+    background-color: #F55A5A;
 }
+#color-2 {
+    background-color: #2B283A;
+}
+
+#color-3 {
+    background-color: #FBF3AB;
+}
+
+#color-4 {
+    background-color: #AAD1B6;
+}
+
+#color-5 {
+    background-color: #A626D3;
+}
+
 /*
 .app {
     height: 100%;
