@@ -15,6 +15,8 @@ body,
     display: flex;
     flex-flow: column;
     height: 100%;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 header h1 {
@@ -36,7 +38,6 @@ form button {
     border-radius: 5px;
     border: 2px solid #fff;
     text-align: center;
-    /* height: 2em; */
     width: 100%;
 }
 
@@ -56,7 +57,7 @@ form select {
     grid-template-areas: 
         "lab lab lab lab lab"
         "col col col col col";
-    grid-template-rows: 1fr auto; /* First row auto-sized to content, second row takes remaining space */
+    grid-template-rows: 1fr auto;
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-between;
 }
@@ -91,70 +92,3 @@ form select {
 #color-5 {
     background-color: #A626D3;
 }
-
-/*
-.app {
-    height: 100%;
-    display:flex;
-    flex-flow: column;
-}
-
-.heading {
-    text-align: center;
-    font-size: .7rem;
-}
-
-form {
-
-    gap: .8em;
-    font-size: .9rem;
-
-    margin: 0 auto;
-}
-
-form * {
-    outline-color: transparent;
-
-    border: 3px solid gray;
-    height: 3rem;
-    width: 90%;
-}
-
-form .color-type,
-form .get-color-btn {
-    border-radius: 5px;
-    text-align: center;
-} 
-
-
-.color-selection {
-
-    border: 3px solid gray;
-    
-    border-radius: 5px;
-
-}
-
-.colors {
-
-    flex: 0 1 auto;
-}
-
-.color {
-    height: 100%;
-    display: inline-block;
-    flex-basis: auto;
-    background-color: aqua;
-} */
-
-/*
-.color-selection::-webkit-color-swatch {
-    border: none;
-    border-radius: 50%;
-    padding: 0;
-  }
-  .color-selection::-webkit-color-swatch-wrapper {
-    border: none;
-    border-radius: 50%;
-    padding: 0;
-  } */
